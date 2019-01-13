@@ -11,7 +11,7 @@ export default {
   }),
   methods: {
     handleClick() {
-      this.glou++;
+      this.glou = this.glou + 1;
     },
   },
 };
