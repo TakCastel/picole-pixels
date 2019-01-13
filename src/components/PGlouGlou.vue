@@ -5,9 +5,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  data: () => ({
-    glou: 0,
-  }),
+  computed: {
+    ...mapState({
+      glou: state => state.glou,
+    }),
+  },
 };
 </script>
