@@ -1,11 +1,17 @@
 <template>
   <div class="button">
-    <button>Glou</button>
+    <button @click="drink">Glou</button>
   </div>
 </template>
 
 <script>
-export default {
+import { mapMutations } from 'vuex';
 
+export default {
+  methods: {
+    ...mapMutations([
+      'drink',
+    ]),
+  },
 };
 </script>

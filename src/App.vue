@@ -20,22 +20,31 @@ export default {
 body, * {
   margin: 0;
 }
+
 h1 {
   font-size: 1.5em;
 }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #3c3a30;
+
   button {
+    cursor: pointer;
     padding: 8px 16px;
     background: #f5d20a;
     font-size: 1em;
     border: none;
+    outline: none;
     border-bottom: 2px solid #e4c617;
     border-radius: 4px;
+    &:active {
+      border: none;
+      margin-top: 2px;
+    }
   }
 }
 </style>
