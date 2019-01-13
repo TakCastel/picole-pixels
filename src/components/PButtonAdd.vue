@@ -1,17 +1,21 @@
 <template>
   <div class="button">
-    <button @click="drink">Glou</button>
+    <button @click="handleDrink">Glou</button>
   </div>
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
+import { mapActions } from 'vuex';
 
 export default {
   methods: {
-    ...mapMutations([
+    ...mapActions([
       'drink',
     ]),
+
+    handleDrink() {
+      this.drink({ date: new Date(), glou: 1 });
+    },
   },
 };
 </script>

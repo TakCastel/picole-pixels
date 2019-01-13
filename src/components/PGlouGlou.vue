@@ -1,6 +1,6 @@
 <template>
   <div class="glou">
-    Vous avez bu {{ glou }} fois
+    <p>{{ drinkTree }}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import { mapState } from 'vuex';
 export default {
   computed: {
     ...mapState({
-      glou: state => state.glou,
+      drinkTree: state => state.drinkTree,
     }),
   },
 };
