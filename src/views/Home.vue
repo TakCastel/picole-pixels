@@ -20,6 +20,9 @@ export default {
 
 <style lang="scss">
 .home {
-  margin: 16px
+  margin: 16px;
+  :not(:last-child) {
+    margin-bottom: 10px
+  }
 }
 </style>
