@@ -1,7 +1,16 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
+    <v-app-bar
+      class="grey darken-3 elevation-1 white--text"
+      app
+    >
+      <v-img
+        src="@/assets/logo.png"
+        aspect-ratio="1"
+        max-width="32"
+        class="mr-3"
+      />
+      <v-toolbar-title class="title">
         <span>PicolePixels</span>
       </v-toolbar-title>
     </v-app-bar>
